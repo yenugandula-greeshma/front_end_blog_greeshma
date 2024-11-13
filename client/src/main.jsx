@@ -49,7 +49,7 @@ const router = createBrowserRouter([
       {
         path:"/blogs/:id",
         element:<SingleBlog/>,
-        loader:({params})=>fetch(`http://localhost:5000/blogs/${params.id}`)
+        loader:({params})=>fetch(`https://blog-react-app-greeshma-server.vercel.app/blogs/${params.id}`)
       }
     ]
   },
