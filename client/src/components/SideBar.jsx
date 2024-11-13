@@ -11,7 +11,7 @@ const SideBar = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        axios.get("http://localhost:5000/blogs")
+        axios.get("https://blog-react-app-greeshma-server.vercel.app/blogs")
             .then(response => {
                 setPopularBlogs(response.data.slice(0, 15))
                 setLoading(false)
